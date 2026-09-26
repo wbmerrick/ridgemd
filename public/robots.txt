@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /intake
+Disallow: /checkout
+Disallow: /dashboard
+Disallow: /provider
+Disallow: /visit
+Disallow: /oauth
+Disallow: /ops
+
+Sitemap: https://www.ridgemd.com/sitemap.xml
