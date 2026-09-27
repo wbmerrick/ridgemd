@@ -54,7 +54,7 @@ Current sections (top → bottom) and what should change:
 | `#` | Current block | Approx. lines | APN analog | Change checklist |
 | --- | --- | --- | --- | --- |
 | 1 | **Hero** (brand, kicker, H1, body, CTAs, chat, telemetry rail) | ~740–825 | Hero + conversion | [ ] Trim to **one** primary + **one** secondary CTA (move “My dashboard” out of hero). [ ] Prefer full-bleed photo/atmosphere over dense decorative graphics if competing with brand. [ ] Keep brand-first; do not let H1 overpower `RidgeMD`. [ ] Telemetry rail → optional trust rail (credentials / “licensed doctors”) — less “instrument HUD”. |
-| 2 | **Brand definition** (“feel spry again”) | ~827–842 | Soft brand moment / mission | [ ] Keep as single-job bridge section. [ ] Shorten if it delays path-finder; max ~py-16–20. |
+| 2 | **Brand definition** (“feel strong again”) | ~827–842 | Soft brand moment / mission | [ ] Keep as single-job bridge section. [ ] Shorten if it delays path-finder; max ~py-16–20. |
 | 3 | **How it works** `#how` | ~844–870 | Continuum / process | [ ] Keep 3-step grid. [ ] Eyebrow + H2 + orange hairline + one sentence — already APN-aligned. [ ] Avoid adding icons/cards; keep hairline columns. |
 | 4 | **What we help with** (domains grid) | ~872–907 | “Find Your Path” lite | [ ] Treat as path-finder preview, not a second catalog. [ ] Consider linking cells into `#landing-conditions`. [ ] Hover wash = orange glow only (`signalDim`), not navy. |
 | 5 | **Care options** `#landing-conditions` | ~909–929 | Program cards | [ ] Primary conversion surface after process. [ ] Card hover border = orange; left accent bar already OK. [ ] One section H2; no extra promo chips. |

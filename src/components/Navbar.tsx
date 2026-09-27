@@ -3,6 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { motion, AnimatePresence } from "framer-motion";
 import { RIDGE_MD_COLOR } from "@/brand/tokens";
+import { RidgeMark } from "@/brand/RidgeMark";
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -27,8 +28,9 @@ const Navbar = () => {
   return (
     <nav className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${scrolled ? "bg-navy/90 backdrop-blur-md" : "bg-navy"}`}>
       <div className="section-container flex items-center justify-between h-16 px-4 md:px-8">
-        <Link to="/" className="font-display text-primary-foreground font-semibold text-2xl">
-          Ridge<span style={{ color: RIDGE_MD_COLOR }}>MD</span>
+        <Link to="/" className="flex items-center gap-2.5 font-display text-primary-foreground font-semibold text-2xl" aria-label="RidgeMD home">
+          <RidgeMark size={28} color="#F4F1E8" />
+          <span>Ridge<span style={{ color: RIDGE_MD_COLOR }}>MD</span></span>
         </Link>
 
         <div className="hidden md:flex items-center gap-8">

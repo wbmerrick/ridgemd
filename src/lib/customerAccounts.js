@@ -345,7 +345,7 @@ export function addCustomerProtocol(email, protocol) {
   const rxHistory = [...(stored.rxHistory || [])];
   if (protocol?.name && !rxHistory.some((r) => r.name === protocol.name)) {
     rxHistory.unshift({
-      rxId: `SPRY-${Math.floor(100000 + Math.random() * 900000)}`,
+      rxId: `RIDGE-${Math.floor(100000 + Math.random() * 900000)}`,
       name: protocol.name,
       strength: protocol.sub || "Clinician-titrated",
       sig: "Follow clinician instructions",

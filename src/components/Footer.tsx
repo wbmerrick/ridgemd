@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import { RIDGE_MD_COLOR } from "@/brand/tokens";
+import { RidgeMark } from "@/brand/RidgeMark";
 
 const Footer = () => {
   return (
@@ -7,8 +8,9 @@ const Footer = () => {
       <div className="section-container">
         <div className="flex flex-col md:flex-row justify-between gap-8">
           <div>
-            <p className="font-display text-primary-foreground text-lg font-semibold mb-2">
-              Ridge<span style={{ color: RIDGE_MD_COLOR }}>MD</span>
+            <p className="mb-2 flex items-center gap-2 font-display text-lg font-semibold text-primary-foreground">
+              <RidgeMark size={22} color="#F4F1E8" />
+              <span>Ridge<span style={{ color: RIDGE_MD_COLOR }}>MD</span></span>
             </p>
             <p className="font-body text-primary-foreground/50 text-sm max-w-md">© 2026 RidgeMD. Telehealth services provided by licensed clinicians for patients in Tennessee.
 

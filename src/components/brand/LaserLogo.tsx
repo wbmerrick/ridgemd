@@ -35,6 +35,29 @@ function usePrefersReducedMotion(): boolean {
   return reduced;
 }
 
+/** Shared RidgeMD mountain mark + wordmark (revealed by laser). */
+function BrandLockup() {
+  return (
+    <>
+      <g transform="translate(36, 18) scale(2)">
+        <circle cx="16" cy="16" r="14.25" stroke="#FFFFFF" strokeWidth="1.35" opacity="0.55" />
+        <path d="M6.2 21.8 11.1 12.4 14.6 17.2 19.4 8.6 25.8 21.8Z" fill="#FFFFFF" />
+        <path d="M19.4 8.6 16.55 14.35 22.25 14.35Z" fill={RIDGE_MD_COLOR} />
+        <path d="M7.2 22.6H24.8" stroke="#FFFFFF" strokeWidth="1.4" strokeLinecap="round" />
+      </g>
+      <text
+        x="118"
+        y="62"
+        style={{ fontFamily: FONT_DISPLAY_CSS, fontWeight: 600, fontSize: 42, letterSpacing: "-0.03em" }}
+        fill="#FFFFFF"
+      >
+        Ridge
+        <tspan fill={RIDGE_MD_COLOR}>MD</tspan>
+      </text>
+    </>
+  );
+}
+
 /** Static end-state mark for prefers-reduced-motion. */
 function StaticDarkLogo() {
   return (
@@ -46,43 +69,8 @@ function StaticDarkLogo() {
       aria-label="RidgeMD"
     >
       <rect width="400" height="100" fill="#000000" />
-      <g transform="translate(48, 34)">
-        <path
-          d="M18.81 2.79A13.5 13.5 0 1 0 27.19 8.45"
-          fill="none"
-          stroke="#FFFFFF"
-          strokeWidth="1.75"
-          strokeLinecap="round"
-        />
-        <path
-          d="M18.26 15.15C22.43 11.12 24.77 6.38 24.84 2.92C22.79 4.4 19.75 8.43 16.85 13.74ZM14.35 16.62C11.31 19.56 9.6 23.02 9.55 25.55C11.04 24.47 13.26 21.53 15.38 17.65Z"
-          fill="#C89E67"
-          stroke="#000000"
-          strokeWidth="1.2"
-          strokeLinejoin="round"
-          paintOrder="stroke"
-        />
-        <path
-          d="M18.4 13.45Q21.09 9.78 23.92 4.83M14.25 17.86Q12.28 20.54 10.22 24.15"
-          fill="none"
-          stroke="#000000"
-          strokeWidth="0.4"
-          strokeLinecap="round"
-        />
-        <path d="M18.4 15 17 13.6 15 13.6 13.6 15 13.6 17 15 18.4 17 18.4 18.4 17Z" fill="#C89E67" stroke="#000000" strokeWidth="1.2" paintOrder="stroke" />
-      </g>
-      <text
-        x="96"
-        y="62"
-        style={{ fontFamily: FONT_DISPLAY_CSS, fontWeight: 600, fontSize: 42, letterSpacing: "-0.03em" }}
-        fill="#FFFFFF"
-      >
-        Ridge
-        <tspan fill={RIDGE_MD_COLOR}>
-          MD
-        </tspan>
-      </text>
-      <line x1="96" y1="74" x2="248" y2="74" stroke="#C89E67" strokeWidth="2" strokeLinecap="round" />
+      <BrandLockup />
+      <line x1="118" y1="74" x2="270" y2="74" stroke="#C89E67" strokeWidth="2" strokeLinecap="round" />
     </svg>
   );
 }
@@ -198,43 +186,8 @@ function LaserLogoSvg({ play }: { play: number }) {
       {/* Brand revealed behind laser */}
       <g clipPath={`url(#${revealId})`}>
         <g className={`ll-brand-${play}`}>
-          <g transform="translate(48, 34)">
-            <path
-              d="M18.81 2.79A13.5 13.5 0 1 0 27.19 8.45"
-              fill="none"
-              stroke="#FFFFFF"
-              strokeWidth="1.75"
-              strokeLinecap="round"
-            />
-            <path
-              d="M18.26 15.15C22.43 11.12 24.77 6.38 24.84 2.92C22.79 4.4 19.75 8.43 16.85 13.74ZM14.35 16.62C11.31 19.56 9.6 23.02 9.55 25.55C11.04 24.47 13.26 21.53 15.38 17.65Z"
-              fill="#C89E67"
-              stroke="#000000"
-              strokeWidth="1.2"
-              strokeLinejoin="round"
-              paintOrder="stroke"
-            />
-            <path
-              d="M18.4 13.45Q21.09 9.78 23.92 4.83M14.25 17.86Q12.28 20.54 10.22 24.15"
-              fill="none"
-              stroke="#000000"
-              strokeWidth="0.4"
-              strokeLinecap="round"
-            />
-            <path d="M18.4 15 17 13.6 15 13.6 13.6 15 13.6 17 15 18.4 17 18.4 18.4 17Z" fill="#C89E67" stroke="#000000" strokeWidth="1.2" paintOrder="stroke" />
-          </g>
-          <text
-            x="96"
-            y="62"
-            style={{ fontFamily: FONT_DISPLAY_CSS, fontWeight: 600, fontSize: 42, letterSpacing: "-0.03em" }}
-            fill="#FFFFFF"
-          >
-            Ridge
-            <tspan fill={RIDGE_MD_COLOR}>
-              MD
-            </tspan>
-          </text>
-          <line className={`ll-underline-${play}`} x1="96" y1="74" x2="248" y2="74" />
+          <BrandLockup />
+          <line className={`ll-underline-${play}`} x1="118" y1="74" x2="270" y2="74" />
         </g>
       </g>
     </svg>

@@ -5,7 +5,7 @@ import { emptyBodyProfile } from "@/lib/patientCareStore";
 /** Realistic mock payload so every dashboard page is fully previewable. */
 export const mockDashboardData: DashboardData = {
   user: {
-    id: "usr_spry_001",
+    id: "usr_ridge_001",
     name: "Alex Rivera",
     email: "alex.rivera@example.com",
     avatarInitials: "AR",

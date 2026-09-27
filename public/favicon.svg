@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" fill="none">
-  <rect width="32" height="32" rx="8" fill="#000"/>
-  <path d="M18.29 5.24A11 11 0 1 0 25.12 9.85" stroke="#fff" stroke-width="1.75" stroke-linecap="round"/>
-  <path d="M17.84 15.31C21.24 12.02 23.15 8.16 23.2 5.34C21.53 6.55 19.06 9.83 16.69 14.16ZM14.66 16.51C12.18 18.9 10.78 21.72 10.74 23.78C11.96 22.9 13.77 20.51 15.49 17.34Z" fill="#E87722" stroke="#000" stroke-width="1.2" stroke-linejoin="round" paint-order="stroke"/>
-  <path d="M17.96 13.92Q20.15 10.93 22.46 6.9M14.57 17.52Q12.97 19.7 11.29 22.64" fill="none" stroke="#000" stroke-width="0.4" stroke-linecap="round"/>
-  <path d="M17.96 15.19 16.81 14.04 15.19 14.04 14.04 15.19 14.04 16.81 15.19 17.96 16.81 17.96 17.96 16.81Z" fill="#E87722" stroke="#000" stroke-width="1.2" paint-order="stroke"/>
+  <rect width="32" height="32" rx="8" fill="#0B1210"/>
+  <circle cx="16" cy="16" r="14.25" stroke="#F4F1E8" stroke-width="1.35" opacity="0.55"/>
+  <path d="M6.2 21.8 11.1 12.4 14.6 17.2 19.4 8.6 25.8 21.8Z" fill="#F4F1E8"/>
+  <path d="M19.4 8.6 16.55 14.35 22.25 14.35Z" fill="#23D9B3"/>
+  <path d="M7.2 22.6H24.8" stroke="#F4F1E8" stroke-width="1.4" stroke-linecap="round"/>
 </svg>

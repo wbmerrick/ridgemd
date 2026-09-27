@@ -5,6 +5,7 @@ import { isMasterEmail } from "@/lib/masterAccount";
 import { restoreCustomerSession } from "@/lib/customerAccounts";
 import { isDemoRequest } from "./opsHelpers";
 import { DEMO_STAFF } from "./opsDemoData";
+import { RidgeMark } from "@/brand/RidgeMark";
 
 type OpsSession = {
   accessToken: string;
@@ -82,7 +83,7 @@ export default function OpsLayout() {
             to={demo ? "/ops?demo=1" : "/ops"}
             className="font-display text-lg tracking-tight shrink-0"
           >
-            Ridge<span className="text-[#9dba8c]">MD</span> Ops
+            <span className="inline-flex items-center gap-2"><RidgeMark size={20} color="#F4F1E8" accent="#9dba8c" /><span>Ridge<span className="text-[#9dba8c]">MD</span> Ops</span></span>
           </Link>
           <nav className="hidden sm:flex items-center gap-3 text-xs text-white/50">
             <span>Clinician console</span>
